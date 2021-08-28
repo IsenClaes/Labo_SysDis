@@ -11195,8 +11195,8 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#catalogue">Catalogue</a></li>
                 <li sec:authorize="isAuthenticated()" th:if="${session.userId}" class="nav-item"><a class="nav-link js-scroll-trigger" href="#commandes">Commandes</a></li>
+                <li sec:authorize="isAuthenticated()" th:if="${session.ShoppingCart.listArticles.isEmpty()==false}" class="nav-item"><a class="nav-link js-scroll-trigger" href="#panier">Mon panier</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#panier">Mon panier</a></li>
                 <div sec:authorize="isAuthenticated()==false" th:if="${session.userId==null}">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="/login">Se connecter</a></li>
                 </div>

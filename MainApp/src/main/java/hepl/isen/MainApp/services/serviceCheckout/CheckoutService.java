@@ -79,7 +79,7 @@ public class CheckoutService {
         }
         else
         {
-            String message = "Transaction refused, not enough money !";
+            String message = "Transaction refused, not enough money ";
             model.addAttribute("Error", message);
             for (Article article : shoppingCart.listArticles)
             {

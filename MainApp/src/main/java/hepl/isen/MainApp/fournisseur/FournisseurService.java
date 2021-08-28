@@ -18,14 +18,14 @@ public class FournisseurService {
         List<Fournisseur> fournisseurList = new LinkedList<Fournisseur>();
 
         boolean dispo;
-        for (int i = 1; i < 6; i++) {
+        for (int i = 0; i < 3; i++) {
 
             dispo = true;
             int randomWithMathRandom = (int) ((Math.random() * (100 - 1)) + 1);
             if (randomWithMathRandom % 2 == 0)
                 dispo = false;
 
-            fournisseurList.add(new Fournisseur("Fournisseur " + i, idArticle, randomWithMathRandom, dispo));
+            fournisseurList.add(new Fournisseur("Fournisseur " + i+1, idArticle, randomWithMathRandom, dispo));
 
         }
 
@@ -35,7 +35,7 @@ public class FournisseurService {
 
     public void ConfirmationArticle(int idArticle, Fournisseur fournisseur) {
 
-        System.err.println("ConfirmationArticle " + idArticle + fournisseur.getName());
+        System.err.println("ConfirmationArticle " + idArticle + " par fournisseur " + fournisseur.getName());
 
     }
 
