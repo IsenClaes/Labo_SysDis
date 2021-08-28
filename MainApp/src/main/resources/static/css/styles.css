@@ -10215,7 +10215,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #003366 100%), url("informatique.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #003366 100%), url("../assets/informatique.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

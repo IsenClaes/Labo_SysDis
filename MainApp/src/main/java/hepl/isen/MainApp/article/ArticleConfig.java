@@ -1,13 +1,6 @@
-package hepl.isen.TvaService.article;
+package hepl.isen.MainApp.article;
 
-import hepl.isen.TvaService.tva.TvaRepository;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.List;
 
 @Configuration
 public class ArticleConfig {
@@ -50,23 +43,9 @@ public class ArticleConfig {
                     50,
                     tvaRepository.getById(Long.valueOf(2))
             );
-            Article pc = new Article(
-                    "PC Fixe",
-                    1500,
-                    "Informatique",
-                    5,
-                    tvaRepository.getById(Long.valueOf(2))
-            );
-            Article destiny = new Article(
-                    "Destiny 2 Collector",
-                    250,
-                    "Jeux",
-                    10,
-                    tvaRepository.getById(Long.valueOf(2))
-            );
 
-            repository.saveAll(List.of(pc, destiny));
+            repository.saveAll(List.of(livre, clavier, souris, ecran, pc));
         };
-    }*/
-
+    }
+ */
 }
